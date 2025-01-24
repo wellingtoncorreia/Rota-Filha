@@ -1,27 +1,34 @@
-# AngularApplication
+# Angular Rotas filhas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+Este projeto é uma aplicação Angular que gerencia rotas para um sistema de login e um painel de administração. O painel contém seções como Início, Sobre e Contato, e utiliza um layout principal para exibir essas páginas.
 
-## Development server
+## Estrutura de Rotas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **`/`**: Página de Login
+- **`/admin`**: Layout principal
+  - **`/admin`**: Página inicial
+  - **`/admin/sobre`**: Página Sobre
+  - **`/admin/contato`**: Página Contato
+- **`/**`**: Redirecionamento para o login (caso a rota não seja encontrada)
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular 18**
+- **HTML5 e CSS3**
+- **TypeScript**
+- Gerenciamento de rotas com `@angular/router`
 
-## Build
+## Estrutura de Componentes
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- `AppComponent`: Componente raiz
+- `LoginComponent`: Componente para a tela de login
+- `MainLayoutComponent`: Layout principal para as páginas do painel
+  - `HomeComponent`: Página inicial
+  - `SobreComponent`: Página Sobre
+  - `ContatoComponent`: Página Contato
 
-## Running unit tests
+## Instruções de Instalação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/wellingtoncorreia/Rota-Filha.git
